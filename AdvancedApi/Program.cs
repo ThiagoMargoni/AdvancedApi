@@ -1,7 +1,7 @@
 using AdvancedApi.Context;
 using AdvancedApi.Service.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using RoomsFullStack.Configurations;
+using AdvancedApi.Configurations;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -37,6 +37,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.AddGlobalErrorHandler();
 
 app.UseCors("MyPolicy");
 

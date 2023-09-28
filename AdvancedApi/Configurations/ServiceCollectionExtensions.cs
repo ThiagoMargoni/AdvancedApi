@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace RoomsFullStack.Configurations
+namespace AdvancedApi.Configurations
 {
     public static class ServiceCollectionExtensions
     {
